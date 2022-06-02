@@ -182,7 +182,7 @@ function Login({ providers }) {
                         </button>
                         <hr />
 
-                        {/* {Object.values(providers)?.map((provider, index) => {
+                        {Object.values(providers)?.map((provider, index) => {
                           return (
                             <a
                               key={index}
@@ -197,7 +197,7 @@ function Login({ providers }) {
                               {provider.name}
                             </a>
                           );
-                        })} */}
+                        })}
                       </form>
                       <hr />
                       <div className="text-center">
