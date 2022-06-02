@@ -9,7 +9,7 @@ import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import FullLayout from "../src/layouts/FullLayout";
 
-
+import img from '../public/img/undraw_posting_photo.svg'
 
 export default function Home() {
   const router = useRouter();
@@ -433,10 +433,10 @@ export default function Home() {
                       </div>
                       <div className="card-body">
                         <div className="text-center">
-                          <image
+                          <Image
                             className="img-fluid px-3 px-sm-4 mt-3 mb-4"
                             style={{ width: "25 rem" }}
-                            src="img/undraw_posting_photo.svg"
+                            src={img}
                             alt="..."
                           />
                         </div>
