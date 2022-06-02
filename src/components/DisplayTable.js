@@ -11,6 +11,7 @@ import { userStateContext } from "../../pages/login-screens/blank";
 
 export default function DisplayTable() {
   const user = React.useContext(userStateContext);
+  const {users}=user
   const showValues=(row)=>{
     user.setValue('id',row.id)
     user.setValue("firstName", row.firstName);
@@ -35,7 +36,7 @@ export default function DisplayTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {user.users?.map((row) => (
+          {users?.map((row) => (
             <TableRow
               key={row.id}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
