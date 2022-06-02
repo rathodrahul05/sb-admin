@@ -1,0 +1,76 @@
+{
+  "users": [
+    {
+      "firstName": "Rahul",
+      "lastName": "Rathod",
+      "email": "rahul@gmail.com",
+      "gender": "Male",
+      "technicalSkills": [
+        "JavaScript",
+        "React"
+      ],
+      "location": "Mumbai",
+      "id": 2
+    },
+    {
+      "firstName": "john",
+      "lastName": "cena",
+      "email": "john@gmail.com",
+      "gender": "Male",
+      "technicalSkills": [
+        "JavaScript",
+        "Mongo DB",
+        "Node"
+      ],
+      "location": "Pune",
+      "id": 3
+    },
+    {
+      "firstName": "katrina",
+      "lastName": "kaif",
+      "email": "kat@gmail.com",
+      "gender": "Female",
+      "technicalSkills": [
+        "Node",
+        "React",
+        "JavaScript",
+        "Mongo DB"
+      ],
+      "location": "Mumbai",
+      "id": 4
+    },
+    {
+      "firstName": "Joe",
+      "lastName": "Son",
+      "email": "joe@gmail.com",
+      "gender": "Male",
+      "technicalSkills": [
+        "React"
+      ],
+      "location": "Bangalore",
+      "id": 5
+    },
+    {
+      "firstName": "jasmine",
+      "lastName": "kaur",
+      "email": "jas@gmail.com",
+      "gender": "Female",
+      "technicalSkills": [],
+      "location": "Pune",
+      "id": 6
+    },
+    {
+      "firstName": "carl",
+      "lastName": "john",
+      "email": "carl@gmsil.com",
+      "gender": "Male",
+      "technicalSkills": [
+        "Node",
+        "React",
+        "JavaScript"
+      ],
+      "location": "Hyderabad",
+      "id": 7
+    }
+  ]
+}
