@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "server": "json-server --watch src/backend/db.json --port 5000",
-    "export":"next export"
+    "export": "next export"
   },
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -25,6 +25,7 @@
     "react-dom": "18.0.0",
     "react-hook-form": "^7.31.3",
     "react-toastify": "^8.2.0",
+    "vercel": "^24.2.5",
     "yup": "^0.32.11"
   },
   "devDependencies": {
