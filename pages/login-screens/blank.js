@@ -5,6 +5,8 @@ import { httpHelper } from "../../src/helper/httpHelper";
 import FullLayout from "../../src/layouts/FullLayout";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import { useRouter } from "next/router";
+
 
 // context
 export const userStateContext = createContext({
@@ -41,6 +43,7 @@ const schema = yup
 
 export default function Blank() {
   const [isedit, setIsEdit] = useState(false);
+  const router=useRouter()
   const {
     register,
     handleSubmit,
@@ -95,6 +98,17 @@ export default function Blank() {
   };
   useEffect(() => {
     fetchUsers();
+  }, []);
+  useEffect(() => {
+    if (JSON.parse(localStorage.getItem("userLogged")) !== null||JSON.parse(sessionStorage.getItem("userLogged")) !== null) {
+      router.push("/login-screens/blank");
+      const temp = JSON.parse(localStorage.getItem("userLogged"))??JSON.parse(sessionStorage.getItem("userLogged"));
+      const [user] = [...temp];
+
+      // setuserLogged(temp);
+    } else {
+      router.push("/login-screens/login");
+    }
   }, []);
   return (
     <userStateContext.Provider

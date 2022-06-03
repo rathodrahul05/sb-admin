@@ -363,7 +363,8 @@ function TopBar() {
                 className="btn btn-primary"
                 onClick={() => {
                   if (Object.keys(userLogged).length > 0) {
-                    localStorage.removeItem("userLogged");
+                    
+                    localStorage.removeItem("userLogged")||sessionStorage.removeItem('userLogged');
                     window.location.reload();
                   } else {
                     signOut();
