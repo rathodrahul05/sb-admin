@@ -40,13 +40,13 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
     <>
       <Script src="vendor/jquery/jquery.min.js"></Script>
+      <Script src="vendor/jquery-easing/jquery.easing.min.js"></Script>
+      <Script src="js/sb-admin-2.min.js"></Script>
       <Script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
 
       {/* Core plugin JavaScript */}
-      <Script src="vendor/jquery-easing/jquery.easing.min.js"></Script>
 
       {/* Custom Scripts for all pages */}
-      <Script src="js/sb-admin-2.min.js"></Script>
 
       {/* Page level plugins */}
       <Script src="vendor/chart.js/Chart.min.js"></Script>
